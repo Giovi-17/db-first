@@ -1,13 +1,13 @@
 automobili_usate
 
-numero_telaio - VARCHAR(17) - NOTNULL - PRIMARY_KEY(NOTNULL, UNIQUE) - AUTO_INCREMENT
-targa - VARCHAR(7) - NOTNULL
-marca - VARCHAR(20)
-modello - VARCHAR(20)
-chilometri - MEDIUMINT
-alimentazione - VARCHAR(15)
-potenza - SMALL
-numero_porte - TINYINT
-data_immatricolazione - DATE - NOTNULL
-data_ultimo_tagliando - DATE
-numero_proprietari - TINYINT
+VIN_number - VARCHAR(17) - NOTNULL - PRIMARY_KEY(NOTNULL, UNIQUE) - AUTO_INCREMENT
+license_plate - VARCHAR(7) - NOTNULL
+brand - VARCHAR(20)
+model - VARCHAR(20)
+kilometres - MEDIUMINT
+power_supply - VARCHAR(15)
+power - SMALL
+number_doors - TINYINT
+registration_date - DATE - NOTNULL
+last_service_date - DATE
+number_of_owners - TINYINT
