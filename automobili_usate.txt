@@ -1,13 +1,19 @@
-automobili_usate
+used_car
 
-VIN_number - VARCHAR(17) - NOTNULL - PRIMARY_KEY(NOTNULL, UNIQUE) - AUTO_INCREMENT
-license_plate - VARCHAR(7) - NOTNULL
-brand - VARCHAR(20)
-model - VARCHAR(20)
-kilometres - MEDIUMINT
-power_supply - VARCHAR(15)
-power - SMALL
+id - INT - PRIMARY_KEY(NOTNULL, UNIQUE, INDEX) - AUTO_INCREMENT
+VIN_number - VARCHAR(20) - NOTNULL - UNIQUE
+license_plate - VARCHAR(10) - UNIQUE
+brand - VARCHAR(20) - NOTNULL
+model - VARCHAR(20) - NOTNULL
+cc - SMALLINT
+kilometres - MEDIUMINT - NOTNULL
+engine - VARCHAR(15)
+fuel - VARCHAR(20)
 number_doors - TINYINT
 registration_date - DATE - NOTNULL
 last_service_date - DATE
 number_of_owners - TINYINT
+warranty - TINYINT - DEAFAULT(0)
+airbag - TINYINT - DEAFAULT(0)
+description - TEXT
+price - DECIMAL(9,2) - NOTNULL
